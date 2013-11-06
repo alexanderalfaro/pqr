@@ -1,0 +1,19 @@
+Documento original:
+<pre>
+{{ original }}
+</pre>
+
+
+<h3>Palabras importantes</h3>
+<table>
+<tr>
+	<th>Palabra importante</th><th>Normalizado</th>
+</tr>
+{% for a in important_words %}
+	<tr>
+	{% for b in a %}
+		<td>{{ b }}</td>
+	{% endfor %}
+	</tr>
+{% endfor %}
+</table>

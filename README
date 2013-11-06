@@ -1,0 +1,86 @@
+
+INSTALACIÓN
+===========
+
+sudo apt-get install python-django
+
+tar -xvjf procesar_documentos.tar.bz2
+
+
+
+Correr el servidor
+python manage.py runserver 
+
+
+
+Visitar la versión en el navegador:
+http://127.0.0.1:8000/
+
+Crud
+http://127.0.0.1:8000/admin
+
+usuario: admin
+clave: 123456
+
+
+
+NLTK
+====
+
+sudo apt-get install python-setuptools python-dev
+sudo easy_install pip
+sudo pip install -U numpy pyyaml nltk
+
+
+Configuración NLTK
+==================
+
+Ejecute desde una terminal python
+  python
+
+Importe la libreria y ejecute el comando download:
+  import nltk
+  nltk.download()
+
+Seleccione la opción 'd' para descargar y 'all' para descargar todos los paquetes
+
+Ejemplo:
+
+usuario@maquina:~/public_html/procesar_documentos$ python
+Python 2.7.5+ (default, Sep 19 2013, 13:48:49) 
+[GCC 4.8.1] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import nltk
+>>> nltk.download()
+NLTK Downloader
+---------------------------------------------------------------------------
+    d) Download   l) List    u) Update   c) Config   h) Help   q) Quit
+---------------------------------------------------------------------------
+Downloader> d
+Download which package (l=list; x=cancel)?
+  Identifier> all
+    Downloading collection 'all'
+............
+
+
+
+
+Documentación
+=============
+
+http://revista.python.org.ar/3/es/html/lntk.html
+http://cesaraguilar.weebly.com/uploads/2/7/7/5/2775690/pln_uc_09.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+

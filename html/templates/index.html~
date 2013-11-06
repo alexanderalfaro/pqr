@@ -1,0 +1,18 @@
+{% if lista_documentos %}
+    <table>
+        <tr><th>id</th><th>Nombre</th><th>Contenido</th><th>Resultado</th><th>Operaciones</th></tr>
+    {% for documento in lista_documentos %}
+        <tr>
+        	<td>{{ documento.id }}</td>
+        	<td>{{documento.nombre}}</td>
+        	<td>{{documento.contenido}}</td>
+        	<td>{{documento.resultado}}</td>
+        	<td><a href="{{documento.id}}"></a></td>
+        </tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <p>No se han subido documentos.</p>
+{% endif %}
+<hr>
+</form>
